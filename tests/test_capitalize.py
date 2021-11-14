@@ -4,10 +4,13 @@
 
 from capitalize import capitalize
 
-if capitalize('hello') != 'Hello':
-    raise Exception('Unexpected output.')
+assert capitalize('hello') == 'Hello'
+assert capitalize('') == ''
 
-if capitalize('') != '':
-    raise Exception('Unexpected output.')
+# if capitalize('hello') != 'Hello':
+#     raise Exception('Unexpected output.')
 
-print('All tests passed successfully!')
+# if capitalize('') != '':
+#     raise Exception('Unexpected output.')
+
+# print('All tests passed successfully!')
